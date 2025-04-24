@@ -10,5 +10,5 @@ print(len(friends))     # Total number of items in the list
 print("Orange" in friends)  # Checks if "Orange" is in the list → True
 
 print(friends[0])       # Prints first item: "Apple"
-friends[0] = "Graps"  # Apple change to Graps  /// Unlike string Lists are mutable
+friends[0] = "Graps"    # Apple change to Graps  /// Unlike string Lists are mutable
 print(friends)

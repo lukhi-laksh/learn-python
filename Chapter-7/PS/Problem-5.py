@@ -7,6 +7,7 @@ i = 0
 while i < len(l):
     if(l[i] == x):
         print("Found at index", i)
+        break
     else:
         print("find more...")
     i += 1

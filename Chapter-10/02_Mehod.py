@@ -7,5 +7,3 @@ class Student():
         print(name, age)
 
 s1 = Student("harsh", 44)
-
-

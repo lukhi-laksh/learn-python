@@ -12,7 +12,7 @@ def game():
             hiscore = 0
     print(f"your score is: {score}")
     if(score > hiscore):
-        #write new scorein the problem-11 file
+        #write new scorein the problem
         with open("Problem-11.txt", "w") as f:
             f.write(str(score))
     return score    

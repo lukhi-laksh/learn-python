@@ -6,4 +6,5 @@ hm["work"] = "works"
 hm["Lang_know"] = ["gujrati", "english"]
 
 print(hm["Lang_know"])
+# print hm variable
 print(hm)

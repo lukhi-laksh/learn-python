@@ -1,3 +1,4 @@
+# empty dictnary
 hm = {}
 
 hm["laksh"] = 20

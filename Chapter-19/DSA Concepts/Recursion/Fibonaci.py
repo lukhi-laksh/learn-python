@@ -6,6 +6,5 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 
-# Print first 10 Fibonacci numbers
 for i in range(10):
     print(fibonacci(i), end=" ")

@@ -1,3 +1,4 @@
+# Example of stack
 arr = list()
 
 arr.append(5)

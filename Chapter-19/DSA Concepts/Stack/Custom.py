@@ -3,7 +3,7 @@ class Stack:
         self.size = s
         self.top = -1
         self.arr = [0] * s
-
+# This function push one value
     def push(self, value):
         if self.top < self.size - 1:
             self.top += 1

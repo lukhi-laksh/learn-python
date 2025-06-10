@@ -11,7 +11,7 @@ class Stack:
             print(f"Pushed {value} to stack.")
         else:
             print("Stack Overflow")
-
+# This function Display last value
     def display(self):
         if self.top == -1:
             print("Stack is empty")

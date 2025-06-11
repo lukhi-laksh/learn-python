@@ -18,5 +18,3 @@ class Solution:
 sol = Solution()
 st = "((()"
 print(sol.insertAtBottom(st))
-
-[]

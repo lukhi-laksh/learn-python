@@ -1,5 +1,5 @@
 empty = []
-hello = ['h', 'e', 'l', 'l', 'o']
+hello = ['l', 'a', 'k', 's', 'h']
 
 for i in range(len(hello)):
     empty.append(hello[i])

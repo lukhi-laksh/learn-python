@@ -1,5 +1,5 @@
 class Solution():
-    def popMinNumber(self, Sarr):
+    def popMaxNumber(self, Sarr):
         final = [-1] * len(Sarr)
         for i in range(len(Sarr)):
             for j in range(i, len(Sarr)):
@@ -10,4 +10,4 @@ class Solution():
 
 sol = Solution()
 Sarr = [8, 6, 4, 7, 4, 9, 10, 8, 12]
-print(sol.popMinNumber(Sarr))
+print(sol.popMaxNumber(Sarr))

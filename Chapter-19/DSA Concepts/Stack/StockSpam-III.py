@@ -1,17 +1,13 @@
 class Solution():
     def popMinNumber(self, Sarr):
-        final = [-1] * len(Sarr)
+        final = [1] * len(Sarr)
         stack = []
 
-        for i in range(len(Sarr) - 1, -1, -1):
+        for i in range(len(Sarr)):
             while stack and Sarr[i] > Sarr[stack[-1]]:
                 top = stack.pop()
-                final[top] = top - i
+                final[top] = i - top + 1
             stack.append(i)
-        
-        while stack:
-            final[stack[-1]] = stack[-1] + 1
-            stack.pop()
 
         return final
 

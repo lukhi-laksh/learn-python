@@ -1,5 +1,7 @@
 class Solution:
     def insertAtBottom(self, Sarr):
+
+        # Right side first larger
         right = [len(Sarr)] * len(Sarr)
         stack1 = []
 

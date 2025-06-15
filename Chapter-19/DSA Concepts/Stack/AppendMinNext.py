@@ -7,6 +7,8 @@ class Solution():
                 final[stack[-1]] = Sarr[i]
                 stack.pop()
             stack.append(i)
+
+        # Return output
         return final
 
 

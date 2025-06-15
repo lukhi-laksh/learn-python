@@ -1,6 +1,7 @@
 class Solution():
     def popMinNumber(self, Sarr):
         final = [-1] * len(Sarr)
+        # Define stack
         stack = []
         for i in range(len(Sarr)):
             while stack and Sarr[stack[-1]] > Sarr[i]:

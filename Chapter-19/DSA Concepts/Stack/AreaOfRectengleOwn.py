@@ -1,27 +1,41 @@
-class Solution:                          
+class Solution:
     def insertAtBottom(self, Sarr):
-        final1 = [len(Sarr)] * len(Sarr)
+
+        # Right side first larger
+        right = [len(Sarr)] * len(Sarr)
         stack1 = []
 
         for i in range(len(Sarr)):
-            while stack1 and Sarr[stack1[-1]] > Sarr[i]:
+            while stack1 and Sarr[i] < Sarr[stack1[-1]]:
                 top = stack1.pop()
-                final1[top] = i
+                right[top] = i
             stack1.append(i)
-        print(final1)
-        
-        final2 = [-1] * len(Sarr)
+        print(right)
+
+
+        # Left Side first lager
+        left = [-1] * len(Sarr)
         stack2 = []
-        for i in range(len(Sarr) -1, -1, -1):
+
+        for i in range(len(Sarr) - 1, -1, -1):
             while stack2 and Sarr[i] < Sarr[stack2[-1]]:
-                temp = stack2.pop()
-                final2[temp] = i
+                top = stack2.pop()
+                left[top] = top
             stack2.append(i)
-        print(final2)
         
-        
-        
+        while stack2:
+            left[stack2[-1]] = -1
+            stack2.pop()
+
+        print(left)
+
+        ans = []
+        for i in range(len(Sarr)):
+            store = Sarr[i] * (right[i] - left[i] - 1)
+            ans.append(store)
+        return max(ans)
+
+
 sol = Solution()
-arr = [2, 3, 4, 2, 6, 1, 4, 5, 3]
-print(sol.insertAtBottom(arr))                                                                     
- 
+arr = [2, 3, 4, 2, 6, 5, 4, 5, 3]
+print(sol.insertAtBottom(arr))

@@ -1,41 +1,35 @@
-class Solution:
+class Solution:                          
     def insertAtBottom(self, Sarr):
-
-        # Right side first larger
-        right = [len(Sarr)] * len(Sarr)
+        final1 = [len(Sarr)] * len(Sarr)
         stack1 = []
 
         for i in range(len(Sarr)):
-            while stack1 and Sarr[i] < Sarr[stack1[-1]]:
+            while stack1 and Sarr[stack1[-1]] > Sarr[i]:
                 top = stack1.pop()
-                right[top] = i
+                final1[top] = i - top - 1
             stack1.append(i)
-        print(right)
-
-
-        # Left Side first lager
-        left = [-1] * len(Sarr)
-        stack2 = []
-
-        for i in range(len(Sarr) - 1, -1, -1):
-            while stack2 and Sarr[i] < Sarr[stack2[-1]]:
-                top = stack2.pop()
-                left[top] = top
-            stack2.append(i)
+        print(final1)
         
+        final2 = [0] * len(Sarr)
+        stack2 = []
+        for i in range(len(Sarr) -1, -1, -1):
+            while stack2 and Sarr[i] < Sarr[stack2[-1]]:
+                temp = stack2.pop()
+                final2[temp] = temp - i - 1
+            stack2.append(i)
         while stack2:
-            left[stack2[-1]] = -1
-            stack2.pop()
-
-        print(left)
-
+            temp = stack2.pop()
+            final2[temp] = temp
+        print(final2)
+        
         ans = []
         for i in range(len(Sarr)):
-            store = Sarr[i] * (right[i] - left[i] - 1)
+            store = Sarr[i] * (final1[i] + final2[i] + 1)
             ans.append(store)
         return max(ans)
-
-
+        
+        
 sol = Solution()
-arr = [2, 3, 4, 2, 6, 5, 4, 5, 3]
+arr = [2, 3, 4, 2, 6, 1, 4, 5, 3]
 print(sol.insertAtBottom(arr))
+ 

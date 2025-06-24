@@ -30,7 +30,7 @@ class Solution:
         return len(empty) == 0
 
 
-
+# Create object
 sol = Solution()
 st = "()[()]{{()[}}"
 print(sol.insertAtBottom(st))

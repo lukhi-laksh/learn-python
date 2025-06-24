@@ -1,5 +1,6 @@
 class Solution:
     def insertAtBottom(self, st):
+        # create stack
         empty = []
         for i in st:
             if i == "(" or i == "[" or i == "{":

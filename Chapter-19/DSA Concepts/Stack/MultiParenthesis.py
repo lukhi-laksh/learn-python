@@ -25,6 +25,8 @@ class Solution:
                         return False
                     else:
                         empty.pop()
+        
+        # Return output
         return len(empty) == 0
 
 

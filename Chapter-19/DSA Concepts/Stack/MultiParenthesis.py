@@ -2,6 +2,8 @@ class Solution:
     def insertAtBottom(self, st):
         # create stack
         empty = []
+
+        # Each letter Compare
         for i in st:
             if i == "(" or i == "[" or i == "{":
                 empty.append(i)

@@ -1,6 +1,9 @@
 class Solution:
     def insertAtBottom(self, st):
+        # create stack
         empty = []
+
+        # Each letter Compare
         for i in st:
             if i == "(" or i == "[" or i == "{":
                 empty.append(i)
@@ -22,10 +25,12 @@ class Solution:
                         return False
                     else:
                         empty.pop()
+        
+        # Return output
         return len(empty) == 0
 
 
-
+# Create object
 sol = Solution()
 st = "()[()]{{()[}}"
 print(sol.insertAtBottom(st))

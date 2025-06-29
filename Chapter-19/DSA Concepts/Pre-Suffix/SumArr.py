@@ -10,3 +10,7 @@ class Solution:
             maxi = max(maxi, prefix)
             
         return maxi        
+        
+sol = Solution()
+s = [2, 3, -8, 7, -1, 2, 3]
+print(sol.maxSubArraySum(s))

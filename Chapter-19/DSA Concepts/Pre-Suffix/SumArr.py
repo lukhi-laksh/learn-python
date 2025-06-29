@@ -5,4 +5,8 @@ class Solution:
         for i in arr:
             prefix += i
             
-      
+            if prefix < 0:
+                prefix = 0
+            maxi = max(maxi, prefix)
+            
+        return maxi        

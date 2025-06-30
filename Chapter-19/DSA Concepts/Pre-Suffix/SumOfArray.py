@@ -12,6 +12,7 @@ for i in range(1, len(arr)):
     empty[i] = empty[i - 1] + arr[i]
 print(empty)
 
+# second for loop
 for i in range(len(arr) - 2, -1, -1):
     revEmpty[i] = revEmpty[i + 1] + arr[i]
 print(revEmpty)

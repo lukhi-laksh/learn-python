@@ -7,7 +7,7 @@ empty[0] = arr[0]
 revEmpty[len(arr)-1] = arr[len(arr)-1]
 
 
-
+# first for loop
 for i in range(1, len(arr)):
     empty[i] = empty[i - 1] + arr[i]
 print(empty)

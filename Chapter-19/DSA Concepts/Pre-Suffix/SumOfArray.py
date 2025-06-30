@@ -1,9 +1,10 @@
 arr = [6, 4, 5, -3, 2, 8]
 
+
 empty = [None] * len(arr)
 revEmpty = [None] * len(arr)
 
-# assign 0 in array
+# assign first value in empty arrat
 empty[0] = arr[0]
 revEmpty[len(arr)-1] = arr[len(arr)-1]
 

@@ -2,6 +2,7 @@ class Solution:
     def insertAtBottom(self, st):
         # create variable 
         number = 0
+        # create enpty array
         count = []
         final = []
         for i in st:

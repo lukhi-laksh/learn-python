@@ -14,7 +14,7 @@ class Solution:
             else:
                 if count:
                     final.append(count.pop())
-
+        # Print output 
         print(final)
 
 

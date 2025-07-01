@@ -4,6 +4,7 @@ class Solution:
         number = 0
         # create enpty array
         count = []
+        # Create empty variable 
         final = []
         for i in st:
             if i == "(":

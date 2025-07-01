@@ -1,5 +1,6 @@
 class Solution:
     def insertAtBottom(self, st):
+        # create variable 
         number = 0
         count = []
         final = []

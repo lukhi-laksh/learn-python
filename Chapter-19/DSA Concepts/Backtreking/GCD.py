@@ -1,4 +1,5 @@
 def laksh(a, b):
+    # Base case
     if b == 0:
         print(a)
         return

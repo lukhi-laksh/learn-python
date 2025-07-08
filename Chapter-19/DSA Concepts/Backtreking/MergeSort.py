@@ -24,7 +24,8 @@ def laksh(arr, start, end):
             right += 1
             index += 1
         
-        
+        for i in range(len(temp)):
+            arr[start + i] = temp[i]
         
         return arr
     

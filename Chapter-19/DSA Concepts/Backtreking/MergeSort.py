@@ -19,7 +19,14 @@ def laksh(arr, start, end):
             left += 1
             index += 1
         
-    
+        while right <= end:
+            temp[index] = arr[right]
+            right += 1
+            index += 1
+        
+        
+        
+        return arr
     
     def MergeSort(arr, start, end):
         if start >= end:

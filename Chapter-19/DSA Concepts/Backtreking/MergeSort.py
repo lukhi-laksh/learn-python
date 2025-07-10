@@ -4,7 +4,8 @@ def laksh(arr, start, end):
         left = start
         right = mid + 1
         index = 0
-        
+
+        # saperate array
         while left <= mid and right <= end:
             if arr[left] <= arr[right]:
                 temp[index] = arr[left]

@@ -20,7 +20,8 @@ def laksh(arr, start, end):
             temp[index] = arr[left]
             left += 1
             index += 1
-        
+
+        # right side merge
         while right <= end:
             temp[index] = arr[right]
             right += 1

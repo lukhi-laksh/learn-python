@@ -31,7 +31,8 @@ def laksh(arr, start, end):
             arr[start + i] = temp[i]
         
         return arr
-    
+
+    Function Recall
     def MergeSort(arr, start, end):
         if start >= end:
             return

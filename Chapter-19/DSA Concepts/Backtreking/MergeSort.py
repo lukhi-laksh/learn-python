@@ -4,7 +4,8 @@ def laksh(arr, start, end):
         left = start
         right = mid + 1
         index = 0
-        
+
+        # saperate array
         while left <= mid and right <= end:
             if arr[left] <= arr[right]:
                 temp[index] = arr[left]
@@ -13,12 +14,14 @@ def laksh(arr, start, end):
                 temp[index] = arr[right]
                 right += 1
             index += 1
-        
+
+        # left side merge
         while left <= mid:
             temp[index] = arr[left]
             left += 1
             index += 1
-        
+
+        # right side merge
         while right <= end:
             temp[index] = arr[right]
             right += 1
@@ -28,7 +31,8 @@ def laksh(arr, start, end):
             arr[start + i] = temp[i]
         
         return arr
-    
+
+    Function Recall
     def MergeSort(arr, start, end):
         if start >= end:
             return

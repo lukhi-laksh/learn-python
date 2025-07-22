@@ -1,3 +1,4 @@
+# This function is only work when value of array is : array >= -10 and array <= 10
 def permute(arr, ans, index):
     
     if index == len(arr):

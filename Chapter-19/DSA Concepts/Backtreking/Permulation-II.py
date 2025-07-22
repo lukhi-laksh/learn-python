@@ -8,6 +8,8 @@ def permute(arr, ans, index):
     for i in range(index, len(arr)):
         if use[arr[i]] + 10 == 1:
             continue
+        use[arr[i] + 10] == 1
+        arr[index], arr[i] = arr[i], arr[index]
 
             
 

@@ -10,7 +10,8 @@ def permute(arr, ans, index):
             continue
         use[arr[i] + 10] == 1
         arr[index], arr[i] = arr[i], arr[index]
-
+        permute(arr, ans, index + 1)
+        arr[i], arr[index] = arr[i], arr[index]
             
 
 arr = [1, 1, 2]

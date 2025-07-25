@@ -19,3 +19,18 @@ def Total(arr: list, i: int, j: int, n: int, path: list, ans: list, visited: lis
     
     visited[i][j] = 0
 
+
+
+n = 4
+arr = [
+    [1, 0, 0, 0],
+    [1, 1, 0, 1],
+    [1, 1, 1, 1],
+    [1, 1, 1, 1]
+]
+
+visited = [[0]*n for _ in range(n)]
+ans = []
+Total(arr, 0, 0, n, [], ans, visited)
+print("Paths:", ans)
+

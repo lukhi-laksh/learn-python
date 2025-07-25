@@ -15,5 +15,5 @@ def Total(arr: list, i: int, j: int, n: int, path: list, ans: list, visited: lis
             Total(arr, i + row[k], j + col[k], n, path, ans, visited)
             path.pop()
     
-
+    visited[i][j] = 0
 

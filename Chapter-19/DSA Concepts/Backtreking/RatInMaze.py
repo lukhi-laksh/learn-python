@@ -7,7 +7,9 @@ def Total(arr: list, i: int, j: int, n: int, path: list, ans: list, visited: lis
     col = [0, 0, -1, 1]
     dir = "UDLR"
 
-
+    def valid(i, j, n):
+        return i >= 0 and j >= 0 and i < n and j < n
+    
     visited[i][j] = 1
     for k in range(4):
         if (valid(i + row[k], (j + col[k]), n)) and (arr[i + row[k]][j + col[k]]) and not(visited[i + row[k]][j + col[k]]):

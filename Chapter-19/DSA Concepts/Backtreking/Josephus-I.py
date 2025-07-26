@@ -3,7 +3,7 @@ def winner(arr, n, index, left, k):
         for i in range(n):
             if arr[i] == 0:
                 return i
-
+    
     kill = (k - 1) % left
 
     while kill:
@@ -21,6 +21,7 @@ def winner(arr, n, index, left, k):
     while arr[index] == 1:
         index = (index + 1) % n
 
+    # Backtraking
     return winner(arr, n, index, left - 1, k)
 
 

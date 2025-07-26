@@ -12,6 +12,7 @@ def winner(arr, n, index, left, k):
             index = (index + 1) % n
         kill -= 1
 
+    # Index value set
     while arr[index] == 1:
         index = (index + 1) % n
 

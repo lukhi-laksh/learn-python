@@ -1,6 +1,7 @@
 def laksh(arr, n):
     # base Case
     if n == 0:
+        # Return array first index
         return arr[0]
     
     return laksh(arr, n - 1) + arr[n]

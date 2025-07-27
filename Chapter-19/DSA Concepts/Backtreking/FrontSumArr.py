@@ -1,4 +1,5 @@
 def laksh(arr, n):
+    # base Case
     if n == 0:
         return arr[0]
     

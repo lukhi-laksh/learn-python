@@ -7,6 +7,6 @@ def laksh(arr, n):
     # Function Recall
     return laksh(arr, n - 1) + arr[n]
 
-
+# Define list
 arr = [3, 4, 5, 8, 2, 3]
 print(laksh(arr, len(arr) - 1))

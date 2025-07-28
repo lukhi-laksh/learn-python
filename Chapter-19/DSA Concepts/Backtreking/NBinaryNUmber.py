@@ -9,3 +9,10 @@ def binN(s, i, j, ans):
     
     binN(s + "0", i + 1, j, ans)
 
+
+s = ""
+i = 0
+j = 0
+ans = []
+binN(s, i, j, ans)
+print(ans)

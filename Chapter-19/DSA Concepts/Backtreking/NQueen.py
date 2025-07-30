@@ -25,7 +25,8 @@ def SolveNQueen(n):
     
 def find(row: int, n: int, ans: list, board: list, column: list):
     # Base Condition
-
+    if row == n:
+        ans.append(board[:])
     # Put Queen at any n condition
     
     for j in range(n):

@@ -1,4 +1,5 @@
 def way (arr, n, sum):
+    # Base case
     if sum == 0:
         return 1
     if sum < 0:

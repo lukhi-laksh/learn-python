@@ -9,6 +9,7 @@ def way (arr, n, sum):
     # Declare sum = 0
     ans = 0
     for i in range(n):
+        # Recall function
         ans += way (arr, n, sum - arr[i])
     
     return ans

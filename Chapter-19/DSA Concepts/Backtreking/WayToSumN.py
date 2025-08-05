@@ -5,7 +5,8 @@ def way (arr, n, sum):
     # Second base case
     if sum < 0:
         return 0
-    
+
+    # Declare sum = 0
     ans = 0
     for i in range(n):
         ans += way (arr, n, sum - arr[i])

@@ -2,6 +2,7 @@ def way (arr, n, sum):
     # Base case
     if sum == 0:
         return 1
+    # Second base case
     if sum < 0:
         return 0
     

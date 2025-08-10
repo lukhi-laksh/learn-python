@@ -33,4 +33,4 @@ def find(row: int, n: int, ans: list, board: list, column: list, leftDig: list, 
             board[row] = board[row][:j] + '.' + board[row][j+1:]
     return ans
             
-print(SolveNQueen(4))
+print(SolveNQueen(5))

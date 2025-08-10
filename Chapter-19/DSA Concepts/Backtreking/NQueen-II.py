@@ -19,6 +19,7 @@ def find(row: int, n: int, ans: list, board: list, column: list, leftDig: list, 
     
     # Put Queen at any n condition
     for j in range(n):
+        # Check Condition
         if column[j] == 0 and leftDig[n - 1 + j - row] == 0 and rightDig[row + j] == 0:
             column[j] = 1
             leftDig[(n - 1) + j - row] = 1

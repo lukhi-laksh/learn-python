@@ -25,6 +25,7 @@ def find(row: int, n: int, ans: list, board: list, column: list, leftDig: list, 
             leftDig[(n - 1) + j - row] = 1
             rightDig[row + j] = 1
             board[row] = board[row][:j] + 'Q' + board[row][j+1:]
+            # Function recall
             find(row + 1, n, ans, board, column, leftDig, rightDig)
             column[j] = 0
             leftDig[(n - 1) + j - row] = 0

@@ -8,7 +8,7 @@ def SolveNQueen(n):
     return ans
     
 def find(row: int, n: int, ans: list, board: list, column: list, leftDig: list, rightDig: list):
-    # Base Condition
+    # Base Condition of find function
     if row == n:
         ans.append(board[:])
     

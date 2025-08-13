@@ -5,6 +5,7 @@ def fibonacci(n):
     elif n == 1:
         return 1
     else:
+        # Return Function
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 for i in range(10):

@@ -32,7 +32,7 @@ def laksh(arr, start, end):
         
         return arr
 
-    Function Recall
+    # Function Recall
     def MergeSort(arr, start, end):
         if start >= end:
             return

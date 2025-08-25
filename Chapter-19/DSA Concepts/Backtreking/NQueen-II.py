@@ -8,7 +8,7 @@ def SolveNQueen(n):
     return ans
     
 def find(row: int, n: int, ans: list, board: list, column: list, leftDig: list, rightDig: list):
-    # Base Condition
+    # Base Condition of find function
     if row == n:
         ans.append(board[:])
     
@@ -19,11 +19,13 @@ def find(row: int, n: int, ans: list, board: list, column: list, leftDig: list, 
     
     # Put Queen at any n condition
     for j in range(n):
+        # Check Condition
         if column[j] == 0 and leftDig[n - 1 + j - row] == 0 and rightDig[row + j] == 0:
             column[j] = 1
             leftDig[(n - 1) + j - row] = 1
             rightDig[row + j] = 1
             board[row] = board[row][:j] + 'Q' + board[row][j+1:]
+            # Function recall
             find(row + 1, n, ans, board, column, leftDig, rightDig)
             column[j] = 0
             leftDig[(n - 1) + j - row] = 0
@@ -31,4 +33,4 @@ def find(row: int, n: int, ans: list, board: list, column: list, leftDig: list, 
             board[row] = board[row][:j] + '.' + board[row][j+1:]
     return ans
             
-print(SolveNQueen(4))
+print(SolveNQueen(5))

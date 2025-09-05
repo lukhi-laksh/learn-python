@@ -1,4 +1,5 @@
 def laksh(arr, n):
+    # Base Condition
     if n == len(arr) - 1:
         return arr[len(arr) - 1]
     

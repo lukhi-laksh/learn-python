@@ -3,6 +3,7 @@ def laksh(arr, n):
     if n == len(arr) - 1:
         return arr[len(arr) - 1]
     
+    # Function Recall
     return arr[n] + laksh(arr, n + 1)
 
 

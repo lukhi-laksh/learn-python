@@ -11,6 +11,7 @@ def laksh(stri, first, last):
     return laksh(stri, first + 1, last -1)
 
 
+# Check Code
 string = "nayan"
 print(laksh(string, 0, len(string) - 1))
         

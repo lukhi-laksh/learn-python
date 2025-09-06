@@ -1,4 +1,5 @@
 def laksh(stri, first, last):
+    # Base Case
     if first >= last:
         return True
     
